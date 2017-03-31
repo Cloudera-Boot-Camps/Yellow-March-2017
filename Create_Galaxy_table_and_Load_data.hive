@@ -1,0 +1,8 @@
+drop table batch.admin_galaxies1;
+
+create table if not exists batch.admin_galaxies1
+(galaxy_id string, galaxy_name string, galaxy_type string, distance_ly string, absolute_magnitude string, 
+apparent_magnitude string, galaxy_group string) row format delimited fields terminated by ',';
+
+load data inpath '/user/hdfs/ADMIN.GALAXIES/part-m-00000' into table batch.admin_galaxies1;
+

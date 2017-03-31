@@ -1,0 +1,5 @@
+drop table batch.admin_detectors1;
+create table if not exists batch.admin_detectors1 (detector_id string, 
+detector_name string, country string, latitude string, longitude string) row format delimited fields terminated by ',' ;
+
+load data inpath '/user/hdfs/ADMIN.DETECTORS/part-m-00000' into table batch.admin_detectors1;
