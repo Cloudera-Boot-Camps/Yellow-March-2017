@@ -1,0 +1,3 @@
+ssh -i bootcamp-march2017.pem  ec2-user@ec2-34-208-136-152.us-west-2.compute.amazonaws.com
+
+#import --connect jdbc:oracle:thin:@bootcamp-march2017.cghfmcr8k3ia.us-west-2.rds.amazonaws.com:15210:gravity --table ADMIN.MEASUREMENTS  --username gravity --password gravity --m 1 --hive-import --hive-table batch.ADMIN_MEASUREMENTS --create-hive-table
