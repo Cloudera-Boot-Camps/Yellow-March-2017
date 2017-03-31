@@ -1,0 +1,2 @@
+import --connect jdbc:oracle:thin:@bootcamp-march2017.cghfmcr8k3ia.us-west-2.rds.amazonaws.com:15210:gravity --table ADMIN.ASTROPHYSICISTS  --username gravity --password gravity --m 1 --delete-target-dir  <default is home directory>
+import --connect jdbc:oracle:thin:@bootcamp-march2017.cghfmcr8k3ia.us-west-2.rds.amazonaws.com:15210:gravity --table ADMIN.ASTROPHYSICISTS  --username gravity --password gravity --m 1 --target-dir <directory path> 
